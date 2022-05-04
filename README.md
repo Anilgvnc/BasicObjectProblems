@@ -2,4 +2,4 @@
 Simple examples on c++ classes
 
 ## Author
-[Anilgvnc](linktr.ee/LordOFDead)
+[Anilgvnc](https://linktr.ee/LordOFDead)
