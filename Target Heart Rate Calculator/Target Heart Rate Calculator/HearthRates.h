@@ -26,5 +26,5 @@ private:
 	int birthYear{ 0 };
 	int currentDay{ 0 };
 	int currentMonth{ 0 };
-	int	currentYear{ 0 };
+	int currentYear{ 0 };
 };
