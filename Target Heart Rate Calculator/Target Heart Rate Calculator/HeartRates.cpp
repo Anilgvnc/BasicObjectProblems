@@ -1,69 +1,69 @@
 #include <iostream>
-#include "HearthRates.h"
+#include "HeartRates.h"
 using namespace std;
 
-HearthRates::HearthRates(std::string fN, std::string lN, int d, int m, int y)
+HeartRates::HeartRates(std::string fN, std::string lN, int d, int m, int y)
 	: firstName{fN}, lastName{lN}, birthDay{d}, birthMonth{m}, birthYear{y}
 {
 }
 
-void HearthRates::setfirstName(std::string fN)
+void HeartRates::setfirstName(std::string fN)
 {
 	firstName = fN;
 }
 
-std::string HearthRates::getfirstName()
+std::string HeartRates::getfirstName()
 {
 	return firstName;
 }
 
-void HearthRates::setlastName(std::string lN)
+void HeartRates::setlastName(std::string lN)
 {
 	lastName = lN;
 }
 
-std::string HearthRates::getlastName()
+std::string HeartRates::getlastName()
 {
 	return lastName;
 }
 
-void HearthRates::setbirhtDay(int d)
+void HeartRates::setbirhtDay(int d)
 {
 	birthDay = d;
 }
 
-int HearthRates::getbirthDay()
+int HeartRates::getbirthDay()
 {
 	return birthDay;
 }
 
-void HearthRates::setbirthMonth(int m)
+void HeartRates::setbirthMonth(int m)
 {
 	birthMonth = m;
 }
 
-int HearthRates::getbirthMonth()
+int HeartRates::getbirthMonth()
 {
 	return birthMonth;
 }
 
-void HearthRates::setbirthYear(int y)
+void HeartRates::setbirthYear(int y)
 {
 	birthYear = y;
 }
 
-int HearthRates::getbirthYear()
+int HeartRates::getbirthYear()
 {
 	return birthYear;
 }
 
-void HearthRates::setDate()
+void HeartRates::setDate()
 {
 	cout << "Please enter today's day, month, year: ";
 	cin >> currentDay >> currentMonth >> currentYear;
 }
 
-int HearthRates::getAge()
+int HeartRates::getAge()
 {
 	if (currentMonth < birthMonth)
 	{
@@ -79,17 +79,17 @@ int HearthRates::getAge()
 		return currentYear - birthYear;
 }
 
-int HearthRates::getMaximumHearthRate()
+int HeartRates::getMaximumHearthRate()
 {
 	return 220 - getAge();//this formula for calculating your maximum hearth rate.
 }
 
-int HearthRates::getMinimumTargetHearthRate()
+int HeartRates::getMinimumTargetHearthRate()
 {
 	return 50 * getMaximumHearthRate() / 100;
 }
 
-int HearthRates::getMaximumTragetHearthRate()
+int HeartRates::getMaximumTragetHearthRate()
 {
 	return 85 * getMaximumHearthRate() / 100;
 }

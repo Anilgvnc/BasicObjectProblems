@@ -1,5 +1,5 @@
 #include <iostream>
-#include "HearthRates.h"
+#include "HeartRates.h"
 using namespace std;
 
 int main() {
@@ -16,15 +16,15 @@ int main() {
 	cin >> day >> month >> year;
 
 	//Create HearthRates object
-	HearthRates HearthRates(firstName, lastName, day, month, year);
-	HearthRates.setDate();
+	HeartRates HeartRates(firstName, lastName, day, month, year);
+	HeartRates.setDate();
 	cout << "\n****************************************************************" << endl;
-	cout << "First Name: " << HearthRates.getfirstName() << endl;
-	cout << "Last Name: " << HearthRates.getlastName() << endl;
-	cout << "Date of Birth: " << HearthRates.getbirthDay() << "/" << HearthRates.getbirthMonth() << "/" << HearthRates.getbirthYear() << endl;
-	cout << "Age: " << HearthRates.getAge() << endl;
-	cout << "Maximum Hearth rate: " << HearthRates.getMaximumHearthRate() << endl;
-	cout << "Target Hearth Rate: " << HearthRates.getMinimumTargetHearthRate() << "-" << HearthRates.getMaximumTragetHearthRate() << endl;
+	cout << "First Name: " << HeartRates.getfirstName() << endl;
+	cout << "Last Name: " << HeartRates.getlastName() << endl;
+	cout << "Date of Birth: " << HeartRates.getbirthDay() << "/" << HeartRates.getbirthMonth() << "/" << HeartRates.getbirthYear() << endl;
+	cout << "Age: " << HeartRates.getAge() << endl;
+	cout << "Maximum Hearth rate: " << HeartRates.getMaximumHearthRate() << endl;
+	cout << "Target Hearth Rate: " << HeartRates.getMinimumTargetHearthRate() << "-" << HeartRates.getMaximumTragetHearthRate() << endl;
 
 	return 0;
 }

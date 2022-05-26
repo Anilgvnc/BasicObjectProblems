@@ -1,8 +1,8 @@
 #include <string>
 
-class HearthRates {
+class HeartRates {
 public:
-	HearthRates(std::string fN, std::string lN, int d, int m, int y);
+	HeartRates(std::string fN, std::string lN, int d, int m, int y);
 	void setfirstName(std::string fN);
 	std::string getfirstName();
 	void setlastName(std::string lN);
