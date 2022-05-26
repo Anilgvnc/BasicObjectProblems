@@ -13,9 +13,12 @@ int main() {
 	date.displayDate();
 
 	//modify date
-	date.setday(25);
-	date.setmonth(01);
-	date.setyear(1973);
+	int d, m, y;
+	cout << "Enter today's date: ";
+	cin >> d >> m >> y;
+	date.setday(d);
+	date.setmonth(m);
+	date.setyear(y);
 
 	cout << "\n\nModified date: ";
 	date.displayDate();
