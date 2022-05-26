@@ -1,4 +1,5 @@
 #include "account.h"
+using namespace std;
 
 account::account(std::string accountName, int initialBalance)
 :name(accountName) {
@@ -22,11 +23,11 @@ void account::withdraw(int withdrawalAmount){
 	}
 }
 
-void account::setName(std::string accountName){
+void account::setName(string accountName){
 	accountName = name;
 }
 
-std::string account::getName(){
+string account::getName(){
 	return name;
 }
 
