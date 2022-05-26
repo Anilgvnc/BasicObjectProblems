@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 	date date(6, 01, 2002);
 
-	cout << "Mont: " << date.getmonth() << endl;
+	cout << "Month: " << date.getmonth() << endl;
 	cout << "Day: " << date.getday() << endl;
 	cout << "Year: " << date.getyear() << endl;
 
